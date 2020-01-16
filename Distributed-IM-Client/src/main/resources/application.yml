@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: im-client
+
+server:
+  port: 8000
+
+# 消息记录存放路径
+im:
+  message:
+    logger:
+      path: /Users/geyoujia/Documents/distributed-im-message
+  # 客户端唯一ID
+  user:
+    userid: 1212
+    username: yoge
+  # 登录并获取服务器ip+port
+  server:
+    route:
+      request:
+        url: http://localhost:8083/login
